@@ -1,13 +1,19 @@
 const router = require('express').Router();
+const fetch = require('node-fetch');
 
 router.post('/',(req,res) =>{
-    console.log("------",req.body);
-    console.log(req.file);
+    console.log(req.body);
     
-    console.log("hello post method");
+    let data = req.body;
     
-   // res.send("hello");
-    
+    fetch('http://localhost:3001/products', {
+        method: 'POST', // or 'PUT'
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    });
+
 });
 
 router.get('/',(req,res) =>{
