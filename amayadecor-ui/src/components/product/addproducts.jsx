@@ -7,6 +7,7 @@ import { addProduct} from'./product.service';
 import Preview from './imagepreview';
 
 class AddProduct extends React.Component {
+     
     constructor(){
         super();
         this.state ={
@@ -18,25 +19,39 @@ class AddProduct extends React.Component {
             productQu:"",
             images:[{}],
             imagesCounter : 0,
-        } 
+           // formData : new FormData()
+        }
+        
     }
+   // let formData = new FormData();
     handleOnChange = (e) => {
         e.preventDefault();
+        let formData = this.state.formData
         let name= e.target.name;
         let value = e.target.value;
         if(name === "images"){
+           // const images = [...e.target.files]
             //console.log(...e.target.files);
-            const datas = [...e.target.files];
-            let images = datas.map(data => {
-                 return new FormData().append('file',data);
-            })
+            const images = [...e.target.files];
+            // let images = datas.map(data => {
+            //      return new FormData().append('file',data);
+            // })
             this.setState({
                 images
-            })    
+            })  
+              
+            // formData.append(images,images);
+            // this.setState({
+            //     formData 
+            // })
         }else{
         this.setState({
             [name]:value
         })
+        // formData.append(name,value);
+        // this.setState({
+        //     formData 
+        // })
     }
     }
     handleOnAdd =() =>{
@@ -46,17 +61,24 @@ class AddProduct extends React.Component {
           imagesCounter : (counter + 1)
         })   
     }
-    handleOnClick =(e) => {
+    handleSubmit =(e) => {
         e.preventDefault();
+        console.log(e.target);
         
-        addProduct(this.state)
+        const data = new FormData(e.target);
+    //console.log(data);
+       // let check = data.get('images').Files;
+        //console.log(check);
+        
+        //data.get('productName')
+       addProduct(data);
         
         
     }
     render() {
         // console.log("-----------",this.state);
         
-      return  <Form className = "addproductform">
+      return  <Form className = "addproductform" encType="multipart/form-data" name ="product" onSubmit={this.handleSubmit}>
         <Form.Label>Product Catagory</Form.Label>
         <Form.Control as="select" 
             defaultValue="catagory" 
@@ -95,8 +117,7 @@ class AddProduct extends React.Component {
             <Form.File id="images" label="Add Images" name = "images"
                 multiple
                  onChange = {this.handleOnChange} />
-      <Button variant="primary" type="submit" onClick = {this.handleOnClick} 
-                value = {this.state.images}>
+      <Button variant="primary" type="submit"  >
         Submit
       </Button>
     </Form>

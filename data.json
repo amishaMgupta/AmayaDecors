@@ -1,12 +1,20 @@
 {
   "products": [
     {
-      "data": "ss",
+      "productCatagory": "Home Decor",
+      "productName": "a",
+      "productDesc": "a",
+      "productSize": "a",
+      "productPrice": "a",
+      "productQu": "a",
+      "images": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "imagesCounter": 0,
       "id": 1
-    },
-    {
-      "data": "ss",
-      "id": 2
     },
     {
       "productCatagory": "Home Decor",
@@ -16,52 +24,32 @@
       "productPrice": "a",
       "productQu": "a",
       "images": [
-        {},
-        {},
-        {},
-        {}
+        null,
+        null,
+        null,
+        null
       ],
       "imagesCounter": 0,
+      "id": 2
+    },
+    {
       "id": 3
     },
     {
-      "productCatagory": "",
-      "productName": "",
-      "productDesc": "",
-      "productSize": "",
-      "productPrice": "",
-      "productQu": "",
-      "images": [
-        {},
-        {},
-        {}
-      ],
-      "imagesCounter": 0,
       "id": 4
     },
     {
-      "productCatagory": "",
-      "productName": "",
-      "productDesc": "",
-      "productSize": "",
-      "productPrice": "",
-      "productQu": "",
-      "images": [
-        {},
-        {},
-        {}
-      ],
-      "imagesCounter": 0,
       "id": 5
     },
     {
-      "productCatagory": "",
-      "productName": "",
-      "productDesc": "",
-      "productSize": "",
-      "productPrice": "",
-      "productQu": "",
+      "productCatagory": "Home Decor",
+      "productName": "b",
+      "productDesc": "ab",
+      "productSize": "b",
+      "productPrice": "b",
+      "productQu": "b",
       "images": [
+        {},
         {},
         {},
         {}
@@ -70,12 +58,12 @@
       "id": 6
     },
     {
-      "productCatagory": "",
-      "productName": "",
-      "productDesc": "",
-      "productSize": "",
-      "productPrice": "",
-      "productQu": "",
+      "productCatagory": "Home Decor",
+      "productName": "b",
+      "productDesc": "ab",
+      "productSize": "b",
+      "productPrice": "b",
+      "productQu": "b",
       "images": [
         {},
         {},
@@ -86,19 +74,6 @@
       "id": 7
     },
     {
-      "productCatagory": "",
-      "productName": "",
-      "productDesc": "",
-      "productSize": "",
-      "productPrice": "",
-      "productQu": "",
-      "images": [
-        {},
-        {},
-        {},
-        {}
-      ],
-      "imagesCounter": 0,
       "id": 8
     },
     {
@@ -106,60 +81,6 @@
     },
     {
       "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "productCatagory": "",
-      "productName": "",
-      "productDesc": "",
-      "productSize": "",
-      "productPrice": "",
-      "productQu": "",
-      "images": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "imagesCounter": 0,
-      "id": 13
-    },
-    {
-      "productCatagory": "",
-      "productName": "",
-      "productDesc": "",
-      "productSize": "",
-      "productPrice": "",
-      "productQu": "",
-      "images": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "imagesCounter": 0,
-      "id": 14
-    },
-    {
-      "productCatagory": "",
-      "productName": "",
-      "productDesc": "",
-      "productSize": "",
-      "productPrice": "",
-      "productQu": "",
-      "images": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "imagesCounter": 0,
-      "id": 15
     }
   ],
   "sales": [],
